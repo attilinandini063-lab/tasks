@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact Layout Replica</title>
+  <style>
+    .table_1 {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 88%;
+      
+    }
+    .table_2{
+      margin: 0 auto;
+      width: 90%;
+    }
+    table{
+      margin: 0;
+      width: 100%;
+    }
+    td {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+    }
+    
+    .green-bar {
+      background-color: #6B7B3A;  
+      height: 50px;
+    }
+    
+    .blue-bar {
+      background-color: #2E3F66; 
+      height: 50px;
+    }
+   
+    .image-cell img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="table_1">
+   
+     <tr style="height:20px"><td></td> <td></td> <td></td></tr>
+     
+    <tr>
+      <td style=" height:80px;"></td>
+      <td style="width:34%;">
+        <table style="width:100%; height:80px; border-collapse: collapse;">
+          <tr><td style="border:1px solid black; height:20px;"></td></tr>
+          <tr><td style="border:1px solid black; height:20px;"></td></tr>
+          <tr><td style="border:1px solid black; height:20px;"></td></tr>
+          <tr><td style="border:1px solid black; height:20px;"></td></tr>
+          <tr><td style="border:1px solid black; height:20px;"></td></tr>
+        </table>
+      </td>
+      <td style="width:33%;"></td>
+    </tr>
+  
+    <tr style="height:20px"><td></td> <td></td> <td></td></tr>
+  </table>
+
+  <table class="table_2">
+   <tr>
+    <td>
+      <table>
+    
+   
+    <tr>
+      <td colspan="3" class="green-bar"></td>
+    </tr>
+
+
+    <tr>
+      <td style="width:20%; height:300px;"></td>
+      <td class="image-cell" style="width:60%; height:300px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Dendrobates_azureus_MHNT.jpg" alt="Blue Frog">
+      </td>
+      <td style="width:20%;"></td>
+    </tr>
+
+
+    <tr>
+      <td colspan="3" class="blue-bar"></td>
+    </tr>
+    </table>
+  </td>
+   </tr>
+  </table>
+
+</body>
+</html>

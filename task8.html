@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8: Div with Background Image</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .h1 {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .h1::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); /* Dark overlay for better text visibility */
+    }
+
+    .hc {
+      position: relative;
+      z-index: 1; /* Keeps text & button above overlay */
+    }
+
+    .hc h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hc p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hc button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff6600;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hc button:hover {
+      background-color: #cc5200;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="h1">
+    <div class="hc">
+      <h1>Welcome to My Website</h1>
+      <p>Beautiful background image with text and button</p>
+      <button>Click Me</button>
+    </div>
+  </div>
+
+</body>
+</html>
